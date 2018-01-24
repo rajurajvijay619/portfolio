@@ -172,7 +172,7 @@
         <div class="row">
           <div class="col s12 m6 l6">
             <div class="row">
-              <form method="POST" class="col s12" action="https://kesariyatk.000webhostapp.com/portfolio_mail.php">
+              <form method="POST" id="formdata" class="col s12" action="https://kesariyatk.000webhostapp.com/portfolio_mail.php">
                 <div class="row">
                   <div class="input-field col s6">
                     <input id="first_name" type="text" required class="validate">
@@ -209,14 +209,19 @@
         </footer>
   
 
-    	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
       	<script type="text/javascript" src="js/materialize.min.js"></script>
       	<script type="text/javascript">
-          $(document).ready(function(){
-            $('.materialboxed').materialbox();
-          });
-          $(document).ready(function(){
-            $('.collapsible').collapsible();
+          // $(document).ready(function(){
+          //   $('.materialboxed').materialbox();
+          // });
+          // $(document).ready(function(){
+          //   $('.collapsible').collapsible();
+          // });
+          $(function(){
+            $("#formdata").submit(function(){
+              return false;
+            });
           });
       	</script>
     </body>
